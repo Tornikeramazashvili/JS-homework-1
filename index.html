@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Homework 1</title>
+</head>
+
+<body>
+    <script>
+
+        // Arithmetic operations 
+
+        // Addition (+)
+
+        let a = 10
+        let b = 20
+
+        console.log(a + b)
+
+        // Subtraction (-)
+
+        let c = 30
+        let d = 20
+
+        console.log(c - d)
+
+        // Multiplication (*)
+
+        let e = 20
+        let f = 30
+
+        console.log(e * f);
+
+        // Division (/)
+
+        let g = 40
+        let h = 20
+
+        console.log(g / h);
+
+        // Reminder (%)
+
+        let i = 40
+        let j = 25
+
+        console.log(i % j)
+
+
+        // 3 ways to string concatenation 
+
+        let name = "Jeffrey"
+        let surname = "Bezos"
+
+        // 1. concatenation operator
+        console.log(name + surname)
+
+        // 2. String prototype concat method
+        // console.log(name.concat(surname))
+
+        // 3. ES6 Template strings
+        // console.log(`${name} ${surname}`)
+
+
+        // Conditional statements "if" "else"
+
+        let ellipsoid = true;
+        let flat = false;
+
+        if (ellipsoid) {
+            console.log("Earth is an ellipsoid")
+        } else {
+            console.log("Earth is a flat")
+        }
+
+        // if we want to console.log "Earth is flat", we should change after if and write arithmetically incorrect example, like this (if (1>2)).
+        // if we write any text, it will console.log not defined (for example if (text))
+
+
+        // Calculating area of rectangle
+
+        // Rectangle sides
+
+        let rectangleLength = 7
+        let rectangleWidth = 5
+
+        // Rectangle area formula - P = a x b
+
+        console.log(`Rectangle area is ` + rectangleLength * rectangleWidth)
+
+
+        // Calculating area of triangle
+
+        // Triangle sides
+
+        let triangleA = 5
+        let triangleB = 6
+        let triangleC = 6
+
+        // 1. Calculating triangle perimeter - P=a+b+c 
+
+        let trianglePerimeter = triangleA + triangleB + triangleC
+
+        console.log(`Triangle Perimeter is ` + trianglePerimeter)
+
+        // 2. Calculating semi-perimeter of triangle S=(a+b+c)/2
+
+        let trianglePerimeterhalf = trianglePerimeter / 2
+
+        console.log(`Semi-perimeter of triangle is ` + trianglePerimeterhalf)
+
+        // 3. Calculating triangle formula through Heron's formula √S=(s-a)*(s-b)*(s-c)
+
+        let triangleArea = Math.sqrt(trianglePerimeterhalf * (trianglePerimeterhalf - triangleA) * (trianglePerimeterhalf - triangleB) * (trianglePerimeterhalf - triangleC))
+
+        console.log(`Triangle area is ` + triangleArea)
+
+
+        // Calculating radius of circle
+
+        // 1. Circle radius
+
+        let circleRadius = 7
+
+        // 2. Calculating area of circle A = πr2
+
+        console.log(Math.PI * Math.pow(7, 2))
+
+    </script>
+</body>
+
+</html>
